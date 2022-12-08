@@ -82,6 +82,7 @@ a{
     width: 300px;
     height: 300px;
 } */
+/* Estilos Fundas */
 .contenedor-fundas{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -93,6 +94,13 @@ a{
     width: 300px;
     height: 300px;
 }
+.contenedor-fundas img:hover{
+    transform: scale(1.1);
+}
+.contenedor-fundas img{
+    transition: all 1s;
+}
+/* Estilos Cargadores */
 .contenedor-cargador{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -106,6 +114,13 @@ a{
     width: 300px;
     height: 300px;
 }
+.contenedor-cargador img:hover{
+    transform: scale(1.1);
+}
+.contenedor-cargador img{
+    transition: all 1s;
+}
+/* Estilos Vidrios */
 .contenedor-vidrios{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -114,13 +129,29 @@ a{
     justify-items: center;
 }
 .contenedor-vidrios img{
-    width: 300px;
+    width: 280px;
     height: 300px;
 }
-.footer-main{
-    height: 76vh;
+.contenedor-vidrios video{
+    width: 280px;
+    height: 300px;
 }
-
+.contenedor-vidrios img:hover{
+    transform: scale(1.1);
+}
+.contenedor-vidrios img{
+    transition: all 1s;
+}
+.contenedor-vidrios video:hover{
+    transform: scale(1.1);
+}
+.contenedor-vidrios video{
+    transition: all 1s;
+}
+.footer-main{
+    height: 73.2vh;
+}
+/* Estilos Parlantes */
 .contenedor-parlantes{
     display: flex;
     /* align-items: flex-start; */
@@ -140,6 +171,13 @@ a{
     width: 300px;
     height: 300px;
 }
+.contenedor-parlantes img:hover{
+    transform: scale(1.1);
+}
+.contenedor-parlantes img{
+    transition: all 1s;
+}
+/* Estilos Accesorios */
 .contenedor-accesorios{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -147,10 +185,15 @@ a{
     gap: 20px;
     justify-items: center;
 }
-
 .contenedor-accesorios img{
     width: 300px;
     height: 300px;
+}
+.contenedor-accesorios img:hover{
+    transform: scale(1.1);
+}
+.contenedor-accesorios img{
+    transition: all 1s;
 }
 .form-container{
     margin: 20px 30px;
@@ -200,6 +243,8 @@ a{
     padding: 20px;
     /* border-radius: 10px; */
     box-shadow: 1px 1px 11px 0px #00000057;
+    transition: all 1s;
+
 }
 
 .tarjeta:hover{
