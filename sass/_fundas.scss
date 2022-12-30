@@ -1,0 +1,28 @@
+// Estilos fundas
+.contenedor-fundas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+  
+.contenedor-fundas img {
+    width: 300px;
+    height: 300px;
+}
+  
+.contenedor-fundas img:hover {
+    transform: scale(1.1);
+}
+  
+.contenedor-fundas img {
+    transition: all 1s;
+}
+
+.fundas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 50px;
+}
