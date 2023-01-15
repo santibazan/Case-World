@@ -1,0 +1,7 @@
+$azulOs: rgb(13, 59, 103);
+$Fuente: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@mixin templateGrid($cantidadCol, $gap) {
+    display: grid;
+    grid-template-columns: repeat($cantidadCol, 1fr);
+    gap: $gap;
+}

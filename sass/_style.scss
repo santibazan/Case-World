@@ -1,0 +1,274 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 20px;
+  &__title{
+    color: $azulOs;
+    font-family: $Fuente;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    &--art{
+      color: $azulOs;
+      font-family: $Fuente;
+      font-size: 2rem;
+      margin: 20px;
+    }
+  }
+} 
+
+.intro {
+  font-family: $Fuente;
+  margin-bottom: 15px;
+}
+
+#tarjetas {
+  @include templateGrid(3, 70px);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1200px;
+  margin: 25px auto 50px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.3411764706);
+  transition: all 1s;
+  img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  h3{
+    font-family: $Fuente;
+    color: $azulOs;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  p{
+    font-family: $Fuente;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+}
+
+.tarjeta:hover {
+  transform: scale(1.1);
+}
+
+
+/* boton de las tarjetas */
+.tarjeta__enlace {
+  background-color: #22c55e;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 0;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tarjeta__enlace:hover {
+  background-color: #1ca24d;
+  color: white;
+}
+
+/* estilos fundas */
+.contenedor-fundas {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 20px;
+  @include templateGrid(4, 20px);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.contenedor-fundas img {
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-fundas img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-fundas img {
+  transition: all 1s;
+}
+
+.fundas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Estilos Cargadores */
+.contenedor-cargador {
+  @include templateGrid(4, 30px);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding: 20px;
+  margin: 30px 0px;
+}
+
+.contenedor-cargador img {
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-cargador img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-cargador img {
+  transition: all 1s;
+}
+
+/* Estilos Vidrios */
+.contenedor-vidrios {
+  @include templateGrid(4, 20px);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.contenedor-vidrios img {
+  width: 280px;
+  height: 300px;
+}
+
+.contenedor-vidrios video {
+  width: 280px;
+  height: 300px;
+}
+
+.contenedor-vidrios img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-vidrios img {
+  transition: all 1s;
+}
+
+.contenedor-vidrios video:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-vidrios video {
+  transition: all 1s;
+}
+
+/* Estilos Parlantes */
+.contenedor-parlantes {
+  display: flex;
+  /* align-items: flex-start; */
+  margin: 30px;
+}
+
+.contenedor-parlantes h3 {
+  color: $azulOs;
+  font-size: 2rem;
+  margin: 10px 0 20px 20px;
+}
+
+.contenedor-parlantes p {
+  font-size: 1.3rem;
+  padding: 0px 20px;
+}
+
+.contenedor-parlantes img {
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-parlantes img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-parlantes img {
+  transition: all 1s;
+}
+
+/* Estilos Accesorios */
+.contenedor-accesorios {
+  @include templateGrid(4, 20px);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.contenedor-accesorios img {
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-accesorios img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-accesorios img {
+  transition: all 1s;
+}
+
+/* estilos contactos */
+.contacto li {
+  list-style-type: none;
+}
+
+.ubicacion a {
+  color: #012f40;
+}
+
+.mapa {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+/* estilos stock */
+.form-container {
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 5px solid yellowgreen;
+  outline: none;
+  width: 200px;
+  transition: all 1s;
+}
+
+input:focus {
+  border: 5px solid orangered;
+  width: 350px;
+}
+
+textarea {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 5px solid yellowgreen;
+  outline: none;
+  transition: all 0.7s;
+}
+
+textarea:focus {
+  border: 5px solid orangered;
+}
+
+// extends
+.contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+}
